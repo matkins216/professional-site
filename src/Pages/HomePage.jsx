@@ -1,5 +1,5 @@
 import DashboardBox from '../LayoutComponents/DashboardBox';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 
 const gridTemplate= `
@@ -22,13 +22,13 @@ function HomePage() {
             justifyContent: "center",
         }}>
             <DashboardBox textAlign="center" gap="0.75rem" p="0.5rem 0.5rem" gridArea="a">
-                Bio
+                <Typography variant='h4' color='#0d284b'>Bio</Typography> 
             </DashboardBox>
             <DashboardBox textAlign="center" gap="0.75rem" p="0.5rem 0.5rem" gridArea="b">
-                TEXT FOR A DashboardBox
+                <Typography variant='h4' color='#0d284b'>Projects</Typography> 
             </DashboardBox>
             <DashboardBox gap="0.75rem" p="0.5rem 0.5rem" gridArea="c">
-                TEXT FOR A DashboardBox
+                <Typography variant='h4' color='#0d284b'> Resume </Typography> 
             </DashboardBox>
         </Box>
     );
