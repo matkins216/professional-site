@@ -17,11 +17,29 @@ function Navbar() {
             </FlexBetween>
 
 
-            <FlexBetween>
-                <Box sx={{ "&:hover": { color: "#ffff" } }}>
+            <FlexBetween gap="0.75rem">
+                <Box gap="1rem" sx={{ "&:hover": { color: "#ffff" } }}>
 
                     <Link to="/">
-                        <Button variant='outlined' color='white'>Home</Button>
+                        <Button variant='outlined' 
+                            sx={{ border: 2, 
+                            borderColor: "#0d284b",
+                            color: "#0d284b",
+                                "&:hover": { bgcolor: "white", borderColor: "#0d284b"}}}>Home</Button>
+                    </Link>
+
+                </Box>
+
+                <Box  gap="1rem" sx={{ "&:hover": { color: "#ffff" } }}>
+
+                    <Link to="/">
+                        <Button variant='outlined'
+                            sx={{
+                                border: 2,
+                                borderColor: "#0d284b",
+                                color: "#0d284b",
+                                "&:hover": { bgcolor: "white", borderColor: "#0d284b" }
+                            }}>Resume</Button>
                     </Link>
 
                 </Box>
